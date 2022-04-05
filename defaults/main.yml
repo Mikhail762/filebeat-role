@@ -1,0 +1,5 @@
+---
+elk_stack_version: "7.14.0"
+filebeat_install_type: remote
+filebeat_rpm_url: https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-{{ elk_stack_version }}-x86_64.rpm
+filebeat_deb_url: https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-{{ elk_stack_version }}-x86_64.deb
