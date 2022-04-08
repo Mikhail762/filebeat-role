@@ -1,0 +1,21 @@
+---
+- name: Converge
+  hosts: elastic
+  tasks:
+    - name: "Include elastic-role"
+      include_role:
+        name: "elastic-role"
+
+- name: Converge
+  hosts: kibana
+  tasks:
+    - name: "Include kibana-role"
+      include_role:
+        name: "kibana-role"
+
+- name: Converge
+  hosts: filebeat
+  tasks:
+    - name: "Include filebeat-role"
+      include_role:
+        name: "filebeat-role"

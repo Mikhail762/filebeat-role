@@ -1,0 +1,10 @@
+---
+- name: Verify
+  hosts: filebeat
+  gather_facts: false
+  tasks:
+  - name: Filebeat log check
+    wait_for:
+      path: /var/log/filebeat/filebeat
+      state: present
+      timeout: 60

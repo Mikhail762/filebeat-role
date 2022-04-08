@@ -4,4 +4,3 @@
   service:
     name: filebeat
     state: restarted
-  when: ansible_virtualization_type != 'docker'

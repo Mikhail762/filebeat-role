@@ -1,4 +1,10 @@
 ---
+- name: Enable Filebeat service
+  become: true
+  service:
+    name: filebeat
+    state: started
+    enabled: yes
 - name: Configure Filebeat
   become: true
   template:
