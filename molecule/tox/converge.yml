@@ -1,0 +1,7 @@
+---
+- name: Converge
+  hosts: filebeat
+  tasks:
+    - name: "Include filebeat-role"
+      include_role:
+        name: "filebeat-role"

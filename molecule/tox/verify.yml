@@ -1,0 +1,8 @@
+---
+- name: Verify
+  hosts: filebeat
+  gather_facts: false
+  tasks:
+    - name: Example assertion
+        assert:
+          that: true
